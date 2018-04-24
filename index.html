@@ -1,0 +1,1586 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Person of Interest Web UI</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Person of Interest theme components." />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="css/w3.css" />
+    <!-- <link rel="stylesheet" href="css/bootstrap-reboot.min.css" /> -->
+    <!-- <link rel="stylesheet" href="css/bootstrap-grid.min.css" /> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/ekko-lightbox.css" />
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed" rel="stylesheet">
+    <!-- the same font(s) isn't free :( -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/poi.css" />
+  </head>
+  <body>
+
+    <div id="bglayer"></div>
+    <div id="bglayer2"></div>
+
+    <div id="coverlayer"></div>
+
+    <div id="loading" class="poi-color-red">Loading..</div>
+ 
+    <!-- Page Container -->
+    <div class="w3-container w3-content container" style="max-width:1400px;margin-top:80px">    
+
+      <div class="w3-col m12 col-md-12">
+
+        <hr class="poi-color-red poi-threat-box-shadow-large" style="border-color: red;" />
+        <h2 class="poi-color-red poi-threat-text-shadow" style="font-weight:bold;text-align:center;">Samaritan</h2>
+        <hr class="poi-color-red poi-threat-box-shadow-large" style="border-color: red;" />
+
+      </div>
+
+      <!-- Left Column -->
+      <div class="w3-col m6 col-md-6">
+
+        <div class="poi-banner-samaritan poi-bg-black" onclick="window.open('https://www.youtube.com/channel/UCnX-MoQEwevPth6upKRs4TQ');">
+          <div id="bannerdemo" class="poi-banner-text poi-color-white">Use like a banner!</div>
+          <div class="poi-banner-icon"></div>
+        </div>
+  
+        <div class="poi-block-samaritan poi-bg-dark poi-color-white">
+          <h3 class="title poi-color-red poi-threat-text-shadow">Samaritan: Block</h3>
+          <div class="poi-content">
+            <span class="poi-status">Type:</span>
+            <span class="poi-status-value">Dark</span>
+            <div class="poi-clear"></div>
+            <span class="poi-status">Label:</span>
+            <span class="poi-status-value">Darkgray</span>
+            <div class="poi-clear"></div>
+            <span class="poi-status">Footer:</span>
+            <span class="poi-status-value">Empty</span>
+          </div>
+          <h3 class="title poi-bg-extralight">&nbsp;</h3>
+        </div>
+        <br />
+
+        <div class="poi-block-samaritan poi-bg-dark poi-color-white">
+          <h3 class="title poi-color-red poi-threat-text-shadow">Samaritan: Block</h3>
+          <div class="poi-content">
+            <span class="poi-status">Type:</span>
+            <span class="poi-status-value">Dark</span>
+            <div class="poi-clear"></div>
+            <span class="poi-status">Label:</span>
+            <span class="poi-status-value">Darkgray, Red</span>
+            <div class="poi-clear"></div>
+            <span class="poi-status">Footer:</span>
+            <span class="poi-status-value">Content detected</span>
+            <div class="poi-clear"></div>
+            <span class="poi-status">Progressbar:</span>
+            <span class="poi-status-value">Dark</span>
+          </div>
+          <h3 class="title poi-bg-extralight">&nbsp;</h3>
+        </div>
+        <br />
+
+        <div class="poi-block-samaritan poi-bg-dark poi-color-white">
+          <h3 class="title poi-bg-darkgray poi-color-black poi-black-text-shadow">Samaritan: Block</h3>
+          <div class="poi-content">
+            <span class="poi-status">Type:</span>
+            <span class="poi-status-value">Light</span>
+            <div class="poi-clear"></div>
+            <span class="poi-status">Label:</span>
+            <span class="poi-status-value">Red</span>
+          </div>
+          <h3 class="title  poi-bg-darkgray">&nbsp;</h3>
+        </div>
+        <br />
+
+        <div class="poi-card-samaritan poi-color-white">
+          <div class="subtitle poi-bg-black poi-color-red">
+            <div class="poi-deviant-icon"></div>
+            <span class="poi-color-white"> /// </span>
+            <span class="poi-threat-text-shadow">Subtitle</span>
+          </div>
+          <h3 class="title poi-bg-red poi-white-text-shadow">Samaritan: Card</h3>
+          <div class="poi-content poi-bg-dark">
+            <div class="poi-content-row">
+              <div class="poi-content-row-text">Type</div>
+              <div class="poi-content-row-label poi-bg-medium">Dark</div>
+            </div>
+            <div class="poi-content-row">
+              <div class="poi-content-row-text">Progressbar</div>
+              <div class="poi-content-row-label poi-bg-red">None</div>
+            </div>
+            <div class="poi-content-row">
+              <div class="poi-content-row-text">Labels</div>
+              <div class="poi-content-row-label poi-bg-lightgray poi-color-black">Demo</div>
+            </div>
+          </div>
+        </div>
+        <br />
+
+        <div class="poi-card-samaritan2 poi-color-white">
+          <h3 class="title poi-bg-black poi-white-text-shadow">Samaritan: Card</h3>
+          <div class="poi-content poi-bg-lightdark">
+            <div class="subtitle poi-bg-light">
+              <div class="subtitle-task poi-color-white poi-white-text-shadow">Subtitle - Task</div>
+              <div class="subtitle-task-value poi-bg-black poi-color-red poi-threat-text-shadow">Subtitle - Task Value</div>
+              <div class="poi-clear"></div>
+            </div>
+            <span class="poi-status">Type:</span>
+            <span class="poi-status-value">Medium</span>
+            <div class="poi-clear"></div>
+            <span class="poi-status">Label:</span>
+            <span class="poi-status-value">Red, black</span>
+            <div class="poi-content-row">
+              <div class="poi-content-row-text">Content:</div>
+              <div class="poi-content-row-label poi-bg-red">Mixed</div>
+            </div>
+          </div>
+        </div>
+        <br />
+  
+        <div class="poi-card-samaritan poi-color-white">
+          <div class="subtitle poi-bg-medium">
+            <div class="poi-deviant-icon"></div>
+            <span class="poi-color-white"> /// </span>
+            <span>Subtitle</span>
+          </div>
+          <h3 class="title poi-bg-red poi-white-text-shadow">Samaritan: Card</h3>
+          <div class="poi-content poi-bg-light">
+            <div class="poi-content-row">
+              <div class="poi-content-row-text">Type</div>
+              <div class="poi-content-row-label poi-bg-medium">Light</div>
+            </div>
+            <div class="poi-content-row">
+              <div class="poi-content-row-text">Progressbar</div>
+              <div class="poi-content-row-label poi-bg-red">None</div>
+            </div>
+            <div class="poi-content-row">
+              <div class="poi-content-row-text">Labels</div>
+              <div class="poi-content-row-label poi-bg-lightgray poi-color-black">Demo</div>
+            </div>
+          </div>
+        </div>
+        <br />
+      
+      <!-- End Right Column -->
+      </div>
+      
+      <!-- Middle Column -->
+      <div class="w3-col m6 col-md-6">
+
+        <!-- Samaritan: banner -->
+        <div class="poi-banner-samaritan poi-bg-black" onclick="window.open('http://rodrigograca31.github.io/Samaritan/?msg=Samaritan Interface demo');">
+          <div id="demobanner" class="poi-banner-text poi-color-white">What are your commands?</div>
+          <div class="poi-banner-icon"></div>
+        </div>
+
+        <!-- Samaritan: block - dark -->
+        <div class="poi-block-samaritan poi-bg-dark poi-color-white">
+          <h3 class="title poi-color-red poi-threat-text-shadow">Identfited threat to system survival</h3>
+          <div class="poi-content">
+            <div class="poi-content-row">
+              <div class="poi-content-row-text">Location:</div>
+              <div class="poi-content-row-label poi-bg-darkgray">Hajdú Budapest hotel</div>
+            </div>
+            <div class="poi-clear"></div>
+            <div class="poi-content-row">
+              <div class="poi-content-row-text">&nbsp;</div>
+              <div class="poi-content-row-label poi-bg-darkgray">Budapest, Hungary</div>
+            </div>
+            <div class="poi-clear"></div>
+            <div class="poi-content-row">
+              <div class="poi-content-row-text">Mode:</div>
+              <div class="poi-content-row-label">Tracking ..</div>
+            </div>
+            <div class="poi-clear"></div>
+          </div>
+          <h3 class="title poi-bg-extralight">&nbsp;</h3>
+        </div>
+        <br />
+
+        <!-- Samaritan: block [2] - dark -->
+        <div class="poi-block-samaritan poi-bg-dark poi-color-white">
+          <h3 class="title poi-color-red poi-threat-text-shadow">Primary threat detected</h3>
+          <div class="poi-content">
+            <div class="poi-content-row">
+              <div class="poi-content-row-text">Location:</div>
+              <div class="poi-content-row-label poi-bg-darkgray">Metro station, New York</div>
+            </div>
+            <div class="poi-clear"></div>
+            <div class="poi-content-row">
+              <div class="poi-content-row-text">Target</div>
+              <div class="poi-content-row-label poi-color-red">Machine HQ</div>
+            </div>
+            <div class="poi-clear"></div>
+            <div class="poi-content-row">
+              <div class="poi-content-row-text">Conclusion:</div>
+              <div class="poi-content-row-label poi-bg-red">Eliminate</div>
+            </div>
+            <div class="poi-clear"></div>
+          </div>
+          <h3 class="title poi-bg-extralight">
+            Assets on way.. Predicted arrival:
+          </h3>
+          <h3 class="title poi-bg-extralight">
+            <div class="poi-progressbar-dark poi-bg-darkgray">
+              <div class="poi-progressbar-value poi-bg-red" style="width:79%;"></div>
+              <div class="poi-progressbar-value-text">79%</div>
+            </div>
+          </h3>
+        </div>
+        <br />
+
+        <!-- Samaritan: block - light -->
+        <div class="poi-block-samaritan poi-bg-dark poi-color-white">
+          <h3 class="title  poi-bg-darkgray poi-color-black poi-black-text-shadow">Samaritan</h3>
+          <div class="poi-content">
+            <div class="poi-content-row">
+              <div class="poi-content-row-text  poi-bg-red">Dominant mandate:</div>
+              <div class="poi-content-row-label">&nbsp;</div>
+            </div>
+            <div class="poi-clear"></div>
+            <p>
+              Eliminate threats to national security [United States]
+            </p>
+          </div>
+          <h3 class="title  poi-bg-darkgray">&nbsp;</h3>
+        </div>
+        <br />
+        
+        <!-- Samaritan: card - dark -->
+        <div class="poi-card-samaritan poi-color-white">
+          <div class="subtitle poi-bg-black poi-color-red">
+            <div class="poi-deviant-icon"></div>
+            <span class="poi-color-white"> /// </span>
+            <span class="poi-threat-text-shadow">Deviant</span>
+          </div>
+          <h3 class="title poi-bg-red poi-white-text-shadow">Primary threat</h3>
+          <div class="poi-content poi-bg-dark">
+            <div class="poi-content-row">
+              <div class="poi-content-row-text">Name</div>
+              <div class="poi-content-row-label poi-bg-medium">John Reese</div>
+            </div>
+            <div class="poi-content-row">
+              <div class="poi-content-row-text">Projection</div>
+              <div class="poi-content-row-label poi-bg-red">Threat</div>
+            </div>
+            <div class="poi-content-row">
+              <div class="poi-content-row-text">Conclusion</div>
+              <div class="poi-content-row-label poi-bg-red">Eliminate</div>
+            </div>
+          </div>
+        </div>
+        <br />
+        
+        <!-- Samaritan: card - medium -->
+        <div class="poi-card-samaritan2 poi-color-white">
+          <h3 class="title poi-bg-black poi-white-text-shadow">Subject identfited</h3>
+          <div class="poi-content poi-bg-lightdark">
+            <div class="subtitle poi-bg-light">
+              <div class="subtitle-task poi-color-white poi-white-text-shadow">Designation:</div>
+              <div class="subtitle-task-value poi-bg-red poi-color-white poi-white-text-shadow">Competitor</div>
+              <div class="poi-clear"></div>
+            </div>
+            <div class="poi-content-row">
+              <div class="poi-content-row-text">Name:</div>
+              <div class="poi-content-row-label poi-bg-black">Mahoney, Claire</div>
+            </div>
+            <div class="poi-content-row">
+              <div class="poi-content-row-text">SSN:</div>
+              <div class="poi-content-row-label poi-bg-black">[Access restricted]</div>
+            </div>
+            <div class="poi-content-row">
+              <div class="poi-content-row-text">Location:</div>
+              <div class="poi-content-row-label poi-bg-black">40.7690 / -73.9435</div>
+            </div>
+          </div>
+        </div>
+        <br />
+
+        <!-- Samaritan: card - light -->
+        <div class="poi-card-samaritan poi-color-white">
+          <div class="subtitle poi-bg-medium">
+            <div class="poi-deviant-icon"></div>
+            <span> /// </span>
+            <span> Deviant </span>
+          </div>
+          <h3 class="title poi-bg-red poi-white-text-shadow">Primary threat</h3>
+          <div class="poi-content poi-bg-light">
+            <div class="poi-content-row">
+              <div class="poi-content-row-text">Name</div>
+              <div class="poi-content-row-label poi-bg-medium">Harold Finch</div>
+            </div>
+            <div class="poi-content-row">
+              <div class="poi-content-row-text">Projection</div>
+              <div class="poi-content-row-label poi-bg-red">Threat</div>
+            </div>
+            <div class="poi-content-row">
+              <div class="poi-content-row-text">Conclusion</div>
+              <div class="poi-content-row-label poi-bg-red">Eliminate</div>
+            </div>
+          </div>
+        </div>
+        <br />
+        
+      <!-- End Right Column -->
+      </div>
+
+      <!-- 4 column layout for boxes -->
+      <div class="w3-col m12 col-md-12 poi-bg-light">
+
+        <div class="w3-col m3 col-md-3">
+
+          <div class="poi-box poi-color-white">
+            <h3 class="title poi-bg-black poi-color-white poi-white-text-shadow">Samaritan: Box</h3>
+            <div class="poi-content">
+              <img src="img/team/harold.png" alt="John portrait" />
+              <div class="poi-content-row">
+                <div class="poi-content-row-text">Text:</div>
+                <div class="poi-content-row-label poi-bg-red">Label</div>
+              </div>
+              <div class="poi-content-row">
+                <div class="poi-content-row-text poi-color-orange">Name:</div>
+                <div class="poi-content-row-label poi-bg-orange">Harold Finch</div>
+              </div>
+            </div>
+            <h3 class="footer-title">
+              Box Footer
+            </h3>
+          </div>
+
+        </div>
+        <div class="w3-col m3 col-md-3">
+
+          <div class="poi-box poi-color-white">
+            <h3 class="title poi-bg-black poi-color-white poi-white-text-shadow">Activity detected</h3>
+            <div class="poi-content">
+              <img src="img/team/john.png" alt="John portrait" />
+              <div class="poi-content-row">
+                <div class="poi-content-row-text poi-color-green poi-complete-text-shadow">Name:</div>
+                <div class="poi-content-row-label poi-bg-green">John Reese</div>
+              </div>
+              <div class="poi-content-row">
+                <div class="poi-content-row-text poi-color-yellow poi-yellow-text-shadow">Mode:</div>
+                <div class="poi-content-row-label poi-bg-yellow poi-color-black">Tracking..</div>
+              </div>
+            </div>
+            <h3 class="footer-title">&nbsp;</h3>
+          </div>
+
+        </div>
+        <div class="w3-col m3 col-md-3">
+
+          <div class="poi-box poi-color-white">
+            <h3 class="title poi-bg-black poi-color-white">Irrelevant</h3>
+            <div class="poi-content">
+              <img src="img/team/root.png" alt="John portrait" />
+              <div class="poi-content-row">
+                <div class="poi-content-row-text">Projection:</div>
+                <div class="poi-content-row-label poi-bg-white poi-color-black">Non-Threat</div>
+              </div>
+              <div class="poi-content-row">
+                <div class="poi-content-row-text">Conclusion:</div>
+                <div class="poi-content-row-label poi-bg-white poi-color-black">Disregard</div>
+              </div>
+            </div>
+            <h3 class="footer-title">
+              <div class="poi-white-text-shadow">New data acquired</div>
+              <div class="poi-color-red poi-threat-text-shadow">Classification error</div>
+            </h3>
+          </div>
+
+        </div>
+        <div class="w3-col m3 col-md-3">
+
+          <div class="poi-box poi-color-white">
+            <h3 class="title poi-bg-black poi-color-red poi-threat-text-shadow"><div class="poi-deviant-icon"></div><span class="poi-color-white"> /// </span><span class="poi-threat-text-shadow">Deviant</span></h3>
+            <div class="poi-content">
+              <img src="img/team/shaw.png" alt="John portrait" />
+              <div class="poi-content-row">
+                <div class="poi-content-row-text">Projection:</div>
+                <div class="poi-content-row-label poi-bg-red"><span>Threat</span></div>
+              </div>
+              <div class="poi-content-row">
+                <div class="poi-content-row-text">Conclusion:</div>
+                <div class="poi-content-row-label poi-bg-red">Eliminate</div>
+              </div>
+            </div>
+            <h3 class="footer-title">
+              <div class="poi-white-text-shadow">New data acquired</div>
+              <div class="poi-color-red poi-threat-text-shadow">Classification error</div>
+            </h3>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- end of 4 column layout for boxes -->
+
+      <div class="w3-col m12 col-md-12">
+
+        <hr class="poi-color-green poi-complete-box-shadow-large" style="border-color: lightgreen;" />
+        <h2 id="machineheader" class="poi-color-green poi-complete-text-shadow" style="font-weight:bold;text-align:center;">Machine</h2>
+        <hr class="poi-color-green poi-complete-box-shadow-large" style="border-color: lightgreen;" />
+
+      </div>
+
+      <!-- Left Column -->
+      <div class="w3-col m6 col-md-6">
+
+        <div class="poi-block-machine poi-bg-dark poi-color-white">
+          <h3 class="title poi-color-red poi-threat-box-shadow poi-threat-text-shadow">Machine: Block</h3>
+          <div class="poi-content">
+            <span class="poi-status">Type:</span>
+            <span class="poi-status-value">Dark</span>
+            <br />
+            <span class="poi-status">Progressbar:</span>
+            <span class="poi-status-value">Dark</span>
+          </div>
+        </div>
+        <br />
+
+        <div class="poi-block-machine poi-bg-dark poi-color-white">
+          <div class="subsubtitle">Machine: Block - subsubtitle</div>
+          <div class="subtitle">Machine: Block - subtitle</div>
+          <div class="poi-content">
+            <p>Machine: Block content</p>
+          </div>
+        </div>
+        <br />
+
+        <div class="poi-block-machine2 poi-bg-lightdark poi-color-white">
+          <h3 class="title poi-white-text-shadow"><div class="poi-rec"></div>Machine: Block</h3>
+          <div class="poi-content">
+            <span class="poi-status">Type:</span>
+            <span class="poi-status-value">Light</span>
+          </div>
+        </div>
+        <br />
+
+        <div class="poi-block-machine2 poi-bg-lightdark poi-color-white">
+          <h6 class="title poi-white-text-shadow">Machine: Block - title</h6>
+          <div class="subtitle poi-bg-white poi-color-black">Machine: Block - subtitle</div>
+          <div class="poi-content">
+            <span class="poi-status">Progressbar:</span>
+            <span class="poi-status-value">Light</span>
+          </div>
+        </div>
+        <br />
+
+        <div class="poi-card-machine poi-bg-dark poi-color-white">
+          <h3 class="title poi-color-red poi-threat-text-shadow">Machine:</h3>
+          <h6 class="subtitle poi-color-red poi-threat-text-shadow">Card</h6>
+          <div class="poi-clear"></div>
+          <div class="poi-content">
+            <div class="poi-content-row">
+              <div class="poi-content-row-text">
+                <span class="poi-status">Type:</span>
+              </div>
+              <div class="poi-content-row-label poi-color-red poi-threat-text-shadow">Dark</div>
+            </div>
+            <div class="poi-content-row">
+              <div class="poi-content-row-text">Progressbar:</div>
+              <div class="poi-content-row-label poi-color-red poi-threat-text-shadow">Medium</div>
+            </div>
+            <div class="poi-clear"></div>
+          </div>
+        </div>
+        <br />
+      
+        <div class="poi-card-machine poi-bg-lightdark poi-color-white">
+          <h3 class="title poi-color-red poi-threat-text-shadow">Machine:</h3>
+          <h6 class="subtitle poi-color-red poi-threat-text-shadow">Card</h6>
+          <div class="poi-clear"></div>
+          <div class="poi-content">
+            <div class="poi-content-row">
+              <div class="poi-content-row-text">
+                <span class="poi-status">Type:</span>
+              </div>
+              <div class="poi-content-row-label poi-color-red poi-threat-text-shadow">Medium</div>
+            </div>
+            <br />
+            <p>Progressbar & Label: <span class="poi-label poi-bg-dark">Dark</span></p>
+            <p>Progressbar & Label: <span class="poi-label poi-bg-medium">Medium</span></p>
+            <p>Progressbar & Label: <span class="poi-label poi-bg-light">Light</span></p>
+            <p>Content: <span class="poi-label poi-bg-red">Mixed</span></p>
+          </div>
+        </div>
+        <br />
+
+        <div class="poi-card-machine poi-bg-extralight poi-color-white">
+          <h3 class="title poi-color-red poi-threat-text-shadow">Machine:</h3>
+          <h6 class="subtitle poi-color-red poi-threat-text-shadow">Card</h6>
+          <div class="poi-clear"></div>
+          <div class="poi-content">
+            <div class="poi-content-row">
+              <div class="poi-content-row-text">Type:</div>
+              <div class="poi-content-row-label">Light</div>
+            </div>
+            <div class="poi-content-row">
+              <div class="poi-content-row-text">Progressbar:</div>
+              <div class="poi-content-row-label">None</div>
+            </div>
+            <div class="poi-clear"></div>
+          </div>
+        </div>
+        <br />
+
+      <!-- End Left Column -->
+      </div>
+      
+      <!-- Right Column -->
+      <div class="w3-col m6 col-md-6">
+        
+        <!-- Machine: block - dark -->
+        <div class="poi-block-machine poi-bg-dark poi-color-white">
+          <h3 class="title poi-color-red poi-threat-box-shadow poi-threat-text-shadow">Terror Threat</h3>
+          <div class="poi-content">
+            <p>Percentage</p>
+            <div class="poi-progressbar-dark poi-bg-darkgray">
+              <div class="poi-progressbar-value poi-bg-red" style="width:19%;"></div>
+              <div class="poi-progressbar-value-text">19%</div>
+            </div>
+          </div>
+        </div>
+        <br />
+
+        <!-- Machine: block [2] - dark -->
+        <div class="poi-block-machine poi-bg-dark poi-color-white">
+          <div class="subsubtitle">Domestic call: 415-556-5293</div>
+          <div class="subtitle">Speech to text conversion:</div>
+          <div class="poi-content">
+            <p>Would kill to get that property ..</p>
+          </div>
+        </div>
+        <br />
+
+        <!-- Machine: block - light -->
+        <div class="poi-block-machine2 poi-bg-lightdark poi-color-white">
+          <h3 class="title poi-white-text-shadow"><div class="poi-rec"></div>Program: Samaritan</h3>
+          <div class="poi-content">
+            <span class="poi-status">Status:</span>
+            <span class="poi-status-value">Unknown</span>
+          </div>
+        </div>
+        <br />
+
+        <!-- Machine: block [2] - light -->
+        <div class="poi-block-machine2 poi-bg-lightdark poi-color-white">
+          <h6 class="title poi-white-text-shadow">Competing systems: Monitoring</h6>
+          <div class="subtitle poi-bg-white poi-color-black">Operational conflict potential</div>
+          <div class="poi-progressbar-light">
+            <div class="poi-progressbar-value poi-bg-red" style="width:30%;"></div>
+            <div class="poi-progressbar-value-text">30.44%</div>
+          </div>
+        </div>
+        <br />
+
+        <!-- Machine: card - dark -->
+        <div class="poi-card-machine poi-bg-dark poi-color-white">
+          <h3 class="title poi-color-red poi-threat-text-shadow">Violence</h3>
+          <h6 class="subtitle poi-color-red poi-threat-text-shadow">Critical</h6>
+          <div class="poi-clear"></div>
+          <div class="poi-content">
+            <p>Predicted</p>
+            <div class="poi-progressbar-medium poi-bg-lightgray">
+              <div class="poi-progressbar-value poi-bg-red" style="width:75%;"></div>
+              <div class="poi-progressbar-value-text poi-color-black">75%</div>
+            </div>
+          </div>
+        </div>
+        <br />
+
+        <!-- Machine: card - medium -->
+        <div class="poi-card-machine poi-bg-lightdark poi-color-white">
+          <h3 class="title poi-color-red poi-threat-text-shadow">Larceny</h3>
+          <h6 class="subtitle poi-color-red poi-threat-text-shadow">Critical</h6>
+          <div class="poi-clear"></div>
+          <div class="poi-content">
+
+            <p>Predicted: Cash</p>
+            <div class="poi-progressbar-dark poi-bg-darkgray">
+              <div class="poi-progressbar-value poi-bg-red" style="width:92%;"></div>
+              <div class="poi-progressbar-value-text">92%</div>
+            </div>
+
+            <p>Predicted: Jewelry</p>
+            <div class="poi-progressbar-medium poi-bg-lightgray">
+              <div class="poi-progressbar-value poi-bg-red" style="width:67%;"></div>
+              <div class="poi-progressbar-value-text poi-color-black">67%</div>
+            </div>
+
+            <p>Predicted: Artifact</p>
+            <div class="poi-progressbar-light">
+              <div class="poi-progressbar-value poi-bg-red" style="width:28%;"></div>
+              <div class="poi-progressbar-value-text">28.36%</div>
+            </div>
+
+          </div>
+        </div>
+        <br />
+        
+        <!-- Machine: card - light -->
+        <div class="poi-card-machine poi-bg-extralight poi-color-white">
+          <h3 class="title poi-color-red poi-threat-text-shadow">Identfied threat:</h3>
+          <h6 class="subtitle poi-color-red poi-threat-text-shadow">Samaritan scanning network</h6>
+          <div class="poi-clear"></div>
+          <div class="poi-content">
+            <div class="poi-content-row">
+              <div class="poi-content-row-text">Location:</div>
+              <div class="poi-content-row-label">Unknown</div>
+            </div>
+            <div class="poi-content-row">
+              <div class="poi-content-row-text">Mode:</div>
+              <div class="poi-content-row-label">Defend with firewalls..</div>
+            </div>
+            <div class="poi-clear"></div>
+          </div>
+        </div>
+        <br />
+
+      <!-- End Right Column -->
+      </div>
+
+      <div class="w3-col m12 col-md-12">
+
+        <hr class="poi-yellow-box-shadow-large" style="border-color: orange;" />
+        <h2 class="poi-color-orange poi-orange-text-shadow" style="font-weight:bold;text-align:center;">Assets</h2>
+        <hr class="poi-yellow-box-shadow-large" style="border-color: orange;" />
+
+      </div>
+
+      <div class="w3-col m12 col-md-12" style="text-align: center;">
+
+        <br /><br />
+        <h3 style="text-align:center;color:white;">Machine</h3>
+        <hr class="poi-yellow-box-shadow-large" style="border-color: orange;" />
+        <hr class="poi-yellow-box-shadow-large" style="border-color: orange;" />
+        <br /><br />
+
+        <button class="poi-button poi-button-fade poi-button-machine-transparent">button 1</button>
+        <button class="poi-button poi-button-fade poi-button-machine-white">button 2</button>
+        <button class="poi-button poi-button-fade poi-button-machine-green">button 3</button>
+        <button class="poi-button poi-button-fade poi-button-machine-yellow">button 4</button>
+        <button class="poi-button poi-button-fade poi-button-machine-blue">button 5</button>
+        <button class="poi-button poi-button-fade poi-button-machine-red">button 6</button>
+
+        <br /><br />
+
+        <a href="#" class="poi-button poi-button-fade poi-button-machine-transparent">linkbutton 1</a>
+        <a href="#" class="poi-button poi-button-fade poi-button-machine-white">linkbutton 2</a>
+        <a href="#" class="poi-button poi-button-fade poi-button-machine-green">linkbutton 3</a>
+        <a href="#" class="poi-button poi-button-fade poi-button-machine-yellow">linkbutton 4</a>
+        <a href="#" class="poi-button poi-button-fade poi-button-machine-blue">linkbutton 5</a>
+        <a href="#" class="poi-button poi-button-fade poi-button-machine-red">linkbutton 6</a>
+
+        <br /><br />
+        <h3 style="text-align:center;color:white;">Samaritan</h3>
+        <hr class="poi-yellow-box-shadow-large" style="border-color: orange;" />
+        <hr class="poi-yellow-box-shadow-large" style="border-color: orange;" />
+        <br /><br />
+
+        <button class="poi-button poi-button-rotate poi-button-samaritan-orange">button 1</button>
+        <button class="poi-button poi-button-rotate poi-button-samaritan-orange2">button 2</button>
+        <button class="poi-button poi-button-rotate poi-button-samaritan-orange3">button 3</button>
+        <button class="poi-button poi-button-rotate poi-button-samaritan-white">button 4</button>
+        <button class="poi-button poi-button-rotate poi-button-samaritan-white2">button 5</button>
+        <button class="poi-button poi-button-rotate poi-button-samaritan-white3">button 6</button>
+
+        <br /><br />
+
+        <a href="#" class="poi-button poi-button-rotate poi-button-samaritan-orange">linkbutton 1</a>
+        <a href="#" class="poi-button poi-button-rotate poi-button-samaritan-orange2">linkbutton 2</a>
+        <a href="#" class="poi-button poi-button-rotate poi-button-samaritan-orange3">linkbutton 3</a>
+        <a href="#" class="poi-button poi-button-rotate poi-button-samaritan-white">linkbutton 4</a>
+        <a href="#" class="poi-button poi-button-rotate poi-button-samaritan-white2">linkbutton 5</a>
+        <a href="#" class="poi-button poi-button-rotate poi-button-samaritan-white3">linkbutton 6</a>
+
+        <br /><br />
+        <h3 style="text-align:center;color:white;">Sizes & Hovers</h3>
+        <hr class="poi-yellow-box-shadow-large" style="border-color: orange;" />
+        <hr class="poi-yellow-box-shadow-large" style="border-color: orange;" />
+        <br /><br />
+
+        <button class="poi-button poi-button-small poi-button-samaritan-orange">button 1</button>
+        <button class="poi-button poi-button-small poi-button-samaritan-orange">button 2</button>
+        <button class="poi-button poi-button-small poi-button-samaritan-orange">button 3</button>
+        <button class="poi-button poi-button-small poi-button-samaritan-orange">button 4</button>
+        <button class="poi-button poi-button-small poi-button-samaritan-orange">button 5</button>
+        <br /><br />
+
+        <button class="poi-button poi-button-large poi-button-samaritan-orange">button 1</button>
+        <button class="poi-button poi-button-large poi-button-samaritan-orange">button 2</button>
+        <button class="poi-button poi-button-large poi-button-samaritan-orange">button 3</button>
+        <button class="poi-button poi-button-large poi-button-samaritan-orange">button 4</button>
+        <button class="poi-button poi-button-large poi-button-samaritan-orange">button 5</button>
+
+        <br /><br />
+
+        <button class="poi-button poi-hover-threat">button 1</button>
+        <button class="poi-button poi-hover-threat2">button 2</button>
+        <button class="poi-button poi-hover-threat3">button 3</button>
+        <button class="poi-button poi-hover-threat4">button 4</button>
+
+        <br /><br />
+        <h3 style="text-align:center;color:white;">Forms</h3>
+        <hr class="poi-yellow-box-shadow-large" style="border-color: orange;" />
+        <hr class="poi-yellow-box-shadow-large" style="border-color: orange;" />
+        <br /><br />
+
+        <form class="poi-color-white poi-white-text-shadow" style="text-align:left;">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail">Email</label>
+              <input type="email" class="form-control poi-input" id="inputEmail" placeholder="Email">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword">Password</label>
+              <input type="password" class="form-control poi-input" id="inputPassword" placeholder="Password">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail2">Email</label>
+              <input type="email" class="form-control poi-input" id="inputEmail2" placeholder="Email" readonly>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword2">Password</label>
+              <input type="password" class="form-control poi-input" id="inputPassword2" placeholder="Password" readonly>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail3">Email</label>
+              <input type="email" class="form-control poi-input" id="inputEmail3" placeholder="Email" disabled>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword3">Password</label>
+              <input type="password" class="form-control poi-input" id="inputPassword3" placeholder="Password" disabled>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlFile1" class="poi-file-upload">Example file input</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlFile2">Example file input</label>
+            <input type="file" class="form-control-file poi-file-upload" id="exampleFormControlFile2" disabled>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Example textarea</label>
+            <textarea class="form-control poi-input" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputState1">Example select</label>
+              <select id="inputState1" class="form-control poi-input">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputState2">Example select</label>
+              <select id="inputState2" class="form-control poi-input" disabled>
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect">Example multiple select</label>
+            <select multiple class="form-control poi-input" id="exampleFormControlSelect">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect2">Example multiple select</label>
+            <select multiple class="form-control  poi-input" id="exampleFormControlSelect2" disabled>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Check me out
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck2">
+              <label class="form-check-label" for="gridCheck2">
+                Check me out2
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+              <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+              <label class="form-check-label" for="exampleRadios1">
+                Default radio
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <label class="form-check-label" for="exampleRadios2">
+                Second default radio
+              </label>
+            </div>
+            <div class="form-check disabled">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+              <label class="form-check-label" for="exampleRadios3">
+                Disabled radio
+              </label>
+            </div>
+          </div>
+          <button class="poi-button poi-button-fade poi-button-machine-green">send</button>
+          <button type="reset" class="pull-right poi-button poi-button-rotate poi-button-machine-red">reset</button>
+        </form>
+
+      </div>
+
+      <div class="w3-col m12 col-md-12">
+
+        <hr class="poi-yellow-box-shadow-large" style="border-color: orange;" />
+        <h2 id="samplesheader" class="poi-color-orange poi-orange-text-shadow" style="font-weight:bold;text-align:center;">Samples</h2>
+        <hr class="poi-yellow-box-shadow-large" style="border-color: orange;" />
+
+      </div>
+
+      <!-- Left Column -->
+      <div class="w3-col m6 col-md-6">
+
+        <div class="poi-block-machine2 poi-bg-lightdark poi-color-white">
+          <h3 class="title poi-white-text-shadow">Side: W3</h3>
+          <div class="subtitle poi-bg-white poi-color-black"><div class="poi-rec" style="margin: 4px 10px 0 0;"></div>Person of Interest Samaritan UI</div>
+          <iframe type="text/html" src="https://www.youtube.com/embed/mF8xkORV1jc?origin=http://example.com" frameborder="0" style="width:100%;height:360px;"></iframe>
+        </div>
+        <br />
+
+        <div class="poi-block-samaritan poi-bg-dark poi-color-white">
+          <h3 class="title poi-bg-darkgray poi-color-white poi-white-text-shadow">W3: Carousel</h3>
+          <div class="poi-content">
+
+            <p>Gallery images</p>
+
+            <div id="w3carousel" class="slideshow-container">
+              <div class="myGallerySlides w3fade">
+                <div class="numbertext">1 / 5</div>
+                <img src="img/gallery/638432.jpg" style="width:100%" alt="You are being watched" />
+                <div class="text">You are being watched</div>
+              </div>
+              <div class="myGallerySlides w3fade">
+                <div class="numbertext">2 / 5</div>
+                <img src="img/gallery/title.jpg" style="width:100%" alt="Title" />
+                <div class="text">Title</div>
+              </div>
+              <div class="myGallerySlides w3fade">
+                <div class="numbertext">3 / 5</div>
+                <img src="img/gallery/title2.jpg" style="width:100%" alt="Title 2" />
+                <div class="text">Title 2</div>
+              </div>
+              <div class="myGallerySlides w3fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="img/gallery/Person-of-Interest-person-of-interest-30633404-1920-1080.jpg" style="width:100%" alt="The good guys" />
+                <div class="text">The good guys</div>
+              </div>
+              <div class="myGallerySlides w3fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="img/gallery/person_of_interest_wallpaper_by_anja25ive-d8g382d.jpg" style="width:100%" alt="Primary Threat" />
+                <div class="text">Primary Threat</div>
+              </div>
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div style="text-align:center;height: 5px;">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+              <span class="dot" onclick="currentSlide(4)"></span> 
+              <span class="dot" onclick="currentSlide(5)"></span> 
+            </div>
+
+          </div>
+          <h3 class="title  poi-bg-darkgray">&nbsp;</h3>
+        </div>
+        <br />
+
+        <div class="poi-card-machine poi-bg-dark poi-color-white">
+          <h3 class="title poi-color-red poi-threat-text-shadow">W3 Lightbox:</h3>
+          <h6 class="subtitle poi-color-red poi-threat-text-shadow">Gallery images</h6>
+          <div class="poi-clear"></div>
+          <div class="poi-content">
+
+            <div class="w3lbrow">
+              <div class="w3lbcolumn">
+                <img src="img/gallery/638432.jpg" style="width:100%" onclick="openLBModal();currentSlideLB(1)" class="hover-shadow" alt="You are being watched" />
+              </div>
+              <div class="w3lbcolumn">
+                <img src="img/gallery/title.jpg" style="width:100%" onclick="openLBModal();currentSlideLB(2)" class="hover-shadow" alt="Title" />
+              </div>
+              <div class="w3lbcolumn">
+                <img src="img/gallery/title2.jpg" style="width:100%" onclick="openLBModal();currentSlideLB(3)" class="hover-shadow" alt="Title 2" />
+              </div>
+              <div class="w3lbcolumn">
+                <img src="img/gallery/Person-of-Interest-person-of-interest-30633404-1920-1080.jpg" style="width:100%" onclick="openLBModal();currentSlideLB(4)" class="hover-shadow" alt="The good guys" />
+              </div>
+              <div class="w3lbcolumn">
+                <img src="img/gallery/person_of_interest_wallpaper_by_anja25ive-d8g382d.jpg" style="width:100%" onclick="openLBModal();currentSlideLB(5)" class="hover-shadow" alt="Primary Threat" />
+              </div>
+            </div>
+            
+            <div id="myW3LBModal" class="w3lbmodal">
+              <span class="w3lbclose" onclick="closeLBModal()">&times;</span>
+              <div class="w3lbmodal-content">
+            
+                <div class="myLightboxSlides">
+                  <div class="w3lbnumbertext">1 / 5</div>
+                  <img src="img/gallery/638432.jpg" style="width:100%" alt="You are being watched" />
+                </div>
+            
+                <div class="myLightboxSlides">
+                  <div class="w3lbnumbertext">2 / 5</div>
+                  <img src="img/gallery/title.jpg" style="width:100%" alt="Title" />
+                </div>
+            
+                <div class="myLightboxSlides">
+                  <div class="w3lbnumbertext">3 / 5</div>
+                  <img src="img/gallery/title2.jpg" style="width:100%" alt="Title 2" />
+                </div>
+                
+                <div class="myLightboxSlides">
+                  <div class="w3lbnumbertext">4 / 5</div>
+                  <img src="img/gallery/Person-of-Interest-person-of-interest-30633404-1920-1080.jpg" style="width:100%" alt="The good guys" />
+                </div>
+                
+                <div class="myLightboxSlides">
+                  <div class="w3lbnumbertext">5 / 5</div>
+                  <img src="img/gallery/person_of_interest_wallpaper_by_anja25ive-d8g382d.jpg" style="width:100%" alt="Primary Threat" />
+                </div>
+                
+                <a class="w3lbprev" onclick="plusSlidesLB(-1)">&#10094;</a>
+                <a class="w3lbnext" onclick="plusSlidesLB(1)">&#10095;</a>
+            
+                <div class="w3lbcaption-container">
+                  <p id="w3lbcaption"></p>
+                </div>
+            
+                <div class="w3lbcolumn">
+                  <img class="w3lbdemo" src="img/gallery/638432.jpg" style="width:100%" onclick="currentSlideLB(1)" alt="You are being watched" />
+                </div>
+                <div class="w3lbcolumn">
+                  <img class="w3lbdemo" src="img/gallery/title.jpg" style="width:100%" onclick="currentSlideLB(2)" alt="Title" />
+                </div>
+                <div class="w3lbcolumn">
+                  <img class="w3lbdemo" src="img/gallery/title2.jpg" style="width:100%" onclick="currentSlideLB(3)" alt="Title 2" />
+                </div>
+                <div class="w3lbcolumn">
+                  <img class="w3lbdemo" src="img/gallery/Person-of-Interest-person-of-interest-30633404-1920-1080.jpg" style="width:100%" onclick="currentSlideLB(4)" alt="The good guys" />
+                </div>
+                <div class="w3lbcolumn">
+                  <img class="w3lbdemo" src="img/gallery/person_of_interest_wallpaper_by_anja25ive-d8g382d.jpg" style="width:100%" onclick="currentSlideLB(4)" alt="Primary Threat" />
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <br />
+
+      <!-- End Left Column -->
+      </div>
+      
+      <!-- Right Column -->
+      <div class="w3-col m6 col-md-6">
+
+        <div class="poi-block-machine2 poi-bg-lightdark poi-color-white">
+          <h3 class="title poi-white-text-shadow">Side: Bootstrap</h3>
+          <div class="subtitle poi-bg-white poi-color-black"><div class="poi-rec" style="margin: 4px 10px 0 0;"></div>Person Of Interest View From The Machine</div>
+          <iframe type="text/html" src="https://www.youtube.com/embed/rWNpXOZFWMo?origin=http://example.com" frameborder="0" style="width:100%;height:360px;"></iframe>
+        </div>
+        <br />
+
+        <div class="poi-block-samaritan poi-bg-dark poi-color-white">
+          <h3 class="title poi-bg-darkgray poi-color-white poi-white-text-shadow">Bootstarp: Carousel</h3>
+          <div class="poi-content">
+
+            <p>Sample images</p>
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="img/samples/machime indicators.png" alt="Machine indicators" />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Machine indicators</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/samples/machime indicators2.jpg" alt="Machine indicators 2" />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Machine indicators2</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/samples/Person of Interest - machine 1.jpg" alt="Machine 1" />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Machine 1</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/samples/Person of Interest - machine 2.jpg" alt="Machine 2" />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Machine 2</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/samples/Person of Interest - machine 3.jpg" alt="Machine 3" />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Machine 3</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/samples/Person of Interest - samaritan 1.jpg" alt="Samaritan 1" />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Samaritan 1</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/samples/Person of Interest - samaritan 2.jpg" alt="Samaritan 2" />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Samaritan 2</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/samples/Person of Interest - samaritan 3.jpg" alt="Samaritan 3" />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Samaritan 3</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/samples/samaritan-box.jpg" alt="Samaritan Box" />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Samaritan Box</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/samples/Person of Interest - samaritan artwork.png" alt="Samaritan artwork" />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Samaritan Artwork</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/samples/samaritan.png" alt="Samaritan communicate" />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Samaritan Communicate</h5>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+
+          </div>
+          <h3 class="title  poi-bg-darkgray">&nbsp;</h3>
+        </div>
+        <br />
+
+        <div class="poi-card-machine poi-bg-dark poi-color-white">
+          <h3 class="title poi-color-red poi-threat-text-shadow">Ekko (Bootstrap) Lightbox:</h3>
+          <h6 class="subtitle poi-color-red poi-threat-text-shadow">Sample images</h6>
+          <div class="poi-clear"></div>
+          <div class="poi-content">
+
+            <div class="row">
+              <a href="img/samples/machime indicators.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-lg-2 col-md-2 col-4 my-3">
+                <img src="img/samples/machime indicators.png" class="img-fluid card" alt="Machine indicators" />
+              </a>
+              <a href="img/samples/machime indicators2.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-lg-2 col-md-2 col-4 my-3">
+                <img src="img/samples/machime indicators2.jpg" class="img-fluid card" alt="Machine indicators 2" />
+              </a>
+              <a href="img/samples/Person of Interest - machine 1.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-lg-2 col-md-2 col-4 my-3">
+                <img src="img/samples/Person of Interest - machine 1.jpg" class="img-fluid card" alt="Machine 1" />
+              </a>
+              <a href="img/samples/Person of Interest - machine 2.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-lg-2 col-md-2 col-4 my-3">
+                <img src="img/samples/Person of Interest - machine 2.jpg" class="img-fluid card" alt="Machine 2" />
+              </a>
+              <a href="img/samples/Person of Interest - machine 3.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-lg-2 col-md-2 col-4 my-3">
+                <img src="img/samples/Person of Interest - machine 3.jpg" class="img-fluid card" alt="Machine 3" />
+              </a>
+              <a href="img/samples/Person of Interest - samaritan 1.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-lg-2 col-md-2 col-4 my-3">
+                <img src="img/samples/Person of Interest - samaritan 1.jpg" class="img-fluid card" alt="Samaritan 1" />
+              </a>
+              <a href="img/samples/Person of Interest - samaritan 2.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-lg-2 col-md-2 col-4 my-3">
+                <img src="img/samples/Person of Interest - samaritan 2.jpg" class="img-fluid card" alt="Samaritan 2" />
+              </a>
+              <a href="img/samples/Person of Interest - samaritan 3.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-lg-2 col-md-2 col-4 my-3">
+                <img src="img/samples/Person of Interest - samaritan 3.jpg" class="img-fluid card" alt="Samaritan 3" />
+              </a>
+              <a href="img/samples/samaritan-box.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-lg-2 col-md-2 col-4 my-3">
+                <img src="img/samples/samaritan-box.jpg" class="img-fluid card" alt="Samaritan Box" />
+              </a>
+              <a href="img/samples/Person of Interest - samaritan artwork.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-lg-2 col-md-2 col-4 my-3">
+                <img src="img/samples/Person of Interest - samaritan artwork.png" class="img-fluid card" alt="Samaritan artwork" />
+              </a>
+              <a href="img/samples/samaritan.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-lg-2 col-md-2 col-4 my-3">
+                <img src="img/samples/samaritan.png" class="img-fluid card" alt="Samaritan communicate" />
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <br />
+        
+      <!-- End Right Column -->
+      </div>
+      
+    <!-- End Page Container -->
+    </div>
+    <br />
+
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/ekko-lightbox.min.js"></script>
+    <script src="js/poi.js"></script>
+
+    <style>
+
+      /* Just for this demo page */
+
+      #bglayer {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-image: url('img/bg/samaritanbg.png');
+        background-size: 100% 100%;
+        z-index: -1;
+      }
+      #bglayer2 {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-image: url('img/bg/lensgrid.png');
+        background-size: 100% 100%;
+        z-index: -1;
+      }
+
+      /* #coverlayer {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-image: url('img/gallery/title.jpg');
+        background-size: 100% 100%;
+        z-index: 999;
+      } */
+
+
+      /* --- W3 styles --- */
+
+      .myGallerySlides {display: none}
+      .myGallerySlides img {vertical-align: middle;}
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+      }
+      /* Next & previous buttons */
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: rgb(255, 0, 0);
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+      }
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+      /* Caption text */
+      .text {
+        color: #ff0000;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 15px;
+        width: 100%;
+        text-align: center;
+      }
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #fd0606;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        position: relative;
+        bottom: 20px;
+        background-color: rgb(80, 80, 80);
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      .w3active, .dot:hover {
+        background-color: #ff0000;
+      }
+      /* Fading animation */
+      .w3fade {
+        -webkit-animation-name: w3fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: w3fade;
+        animation-duration: 1.5s;
+      }
+      @-webkit-keyframes w3fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+      @keyframes w3fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .prev, .next,.text {font-size: 11px}
+      }
+
+
+      .w3lbrow > .w3lbcolumn {
+        padding: 5px 8px;
+      }
+      .w3lbrow:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .w3lbcolumn {
+        float: left;
+        width: 25%;
+      }
+      /* The Modal (background) */
+      .w3lbmodal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: black;
+      }
+      /* Modal Content */
+      .w3lbmodal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        width: 90%;
+        max-width: 1200px;
+      }
+      /* The Close Button */
+      .w3lbclose {
+        color: red;
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 35px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .w3lbclose:hover,
+      .w3lbclose:focus {
+        color: red;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .myLightboxSlides {
+        display: none;
+      }
+      /* Next & previous buttons */
+      .w3lbprev,
+      .w3lbnext {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: red;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+      /* Position the "next button" to the right */
+      .w3lbnext {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      /* On hover, add a black background color with a little bit see-through */
+      .w3lbprev:hover,
+      .w3lbnext:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      /* Number text (1/3 etc) */
+      .w3lbnumbertext {
+        color: red;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      .w3lbcaption-container {
+        text-align: center;
+        background-color: black;
+        padding: 2px 16px;
+        color: red;
+      }
+      .w3lbdemo {
+        opacity: 0.6;
+        cursor: pointer;
+      }
+      .w3lbactive,
+      .w3lbdemo:hover {
+        opacity: 1;
+      }
+      img.hover-shadow {
+        transition: 0.3s;
+        cursor: pointer;
+      }
+      .hover-shadow:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+      }
+
+      /* --- BS styles --- */
+
+    </style>
+    <script>
+      /* Just for this demo page */
+
+      var bglayer = document.getElementById('bglayer');
+      var bglayer2 = document.getElementById('bglayer2');
+      var machineheader = document.getElementById('machineheader');
+      var samplesheader = document.getElementById('samplesheader');
+
+      window.onscroll = function (e) {
+
+        var machineheaderViewportOffset = machineheader.getBoundingClientRect();
+        var machineheaderTop = machineheaderViewportOffset.top;
+        var machineheaderChangePoint = machineheaderTop - 200;
+
+        var samplesheaderViewportOffset = samplesheader.getBoundingClientRect();
+        var samplesheaderTop = samplesheaderViewportOffset.top;
+        var samplesheaderChangePoint = samplesheaderTop - 200;
+        
+        if (machineheaderChangePoint > 0) {
+          bglayer.style.backgroundImage = 'url(img/bg/samaritanbg.png)';
+          bglayer.style.backgroundSize = '100% 100%';
+          bglayer.style.opacity = '1';
+          bglayer2.style.backgroundImage = 'url(img/bg/lensgrid.png)';
+          bglayer2.style.backgroundSize = '100% 100%';
+        } else if (machineheaderChangePoint < 0 && samplesheaderChangePoint > 0) {
+          bglayer.style.backgroundImage = 'url(img/bg/machinebg.png)';
+          bglayer.style.backgroundSize = '100% 100%';
+          bglayer.style.opacity = '0.9';
+          bglayer2.style.backgroundImage = 'url(img/bg/lensgrid-large.png)';
+          bglayer2.style.backgroundSize = '100% 100%';
+        } else {
+          bglayer.style.backgroundImage = 'url(img/bg/poibg.jpg)';
+          bglayer.style.backgroundSize = '100% 100%';
+          bglayer.style.opacity = '1';
+          bglayer2.style.backgroundImage = 'url(img/bg/lensgrid-small.png)';
+          bglayer2.style.backgroundSize = '100% 100%';
+        }
+
+      } 
+
+      /* setTimeout( ()=> {
+        var loadCoverInterval = setInterval( ()=> {
+          var coverlayer = document.getElementById('coverlayer');
+          var coverlayerheight = coverlayer.clientHeight;
+          var newcoverlayerheight = coverlayerheight - 20;
+          if (coverlayerheight > 20) {
+            coverlayer.style.height = newcoverlayerheight + 'px';
+          } else {
+            coverlayer.style.display = 'none';
+            clearInterval(loadCoverInterval);
+          }
+        }, 50);
+      }, 800); */
+
+      function banner1(txtid) {
+
+        switch (txtid) {
+          case 1:
+          samaritanWrite("demobanner", 0, "You are being watched !", "banner1", 2);
+          break;
+          case 2:
+          samaritanWrite("demobanner", 0, "What are your commands ? &nbsp;");
+          break;
+        }
+
+      }
+      banner1(1);
+
+      function banner2(txtid) {
+
+        switch (txtid) {
+          case 1:
+          samaritanWrite("bannerdemo", 0, "Samaritan:_Banner", "banner2", 2);
+          break;
+          case 2:
+          samaritanWrite("bannerdemo", 0, "Samaritan is here !", "banner2", 3);
+          break;
+          case 3:
+          samaritanWrite("bannerdemo", 0, "Use like a banner !", "banner2", 4);
+          break;
+          case 4:
+          samaritanWrite("bannerdemo", 0, "Click me hard !", "banner2", 1);
+          break;
+        }
+
+      }
+      banner2(1);
+
+
+      /* --- W3 scripts --- */
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("myGallerySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" w3active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " w3active";
+      }
+
+      var w3carouselInterval = setInterval( () => {
+        plusSlides(1);
+      }, 5000);
+      document.getElementById('w3carousel').onmouseenter = function(e) {
+        clearInterval(w3carouselInterval);
+      };
+      document.getElementById('w3carousel').onmouseleave = function(e) {
+        w3carouselInterval = setInterval( () => {
+          plusSlides(1);
+        }, 5000);
+      };
+
+
+      function openLBModal() {
+        document.getElementById('myW3LBModal').style.display = "block";
+      }
+      function closeLBModal() {
+        document.getElementById('myW3LBModal').style.display = "none";
+      }
+
+      // When the user clicks anywhere outside of the w3 modal, close it.
+      window.onclick = function(event) {
+        if (event.target == document.getElementById('myW3LBModal')) {
+          document.getElementById('myW3LBModal').style.display = "none";
+        }
+      }
+
+      var slideIndexLB = 1;
+      showSlidesLB(slideIndexLB);
+
+      function plusSlidesLB(n) {
+        showSlidesLB(slideIndexLB += n);
+      }
+      function currentSlideLB(n) {
+        showSlidesLB(slideIndexLB = n);
+      }
+      function showSlidesLB(n) {
+        var i;
+        var slides = document.getElementsByClassName("myLightboxSlides");
+        var dots = document.getElementsByClassName("w3lbdemo");
+        var captionText = document.getElementById("w3lbcaption");
+        if (n > slides.length) {slideIndexLB = 1}
+        if (n < 1) {slideIndexLB = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" w3lbactive", "");
+        }
+        slides[slideIndexLB-1].style.display = "block";
+        dots[slideIndexLB-1].className += " w3lbactive";
+        captionText.innerHTML = dots[slideIndexLB-1].alt;
+      }
+
+      /* --- BS scripts --- */
+
+      $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+          event.preventDefault();
+          $(this).ekkoLightbox({alwaysShowClose: true});
+      });
+    </script>
+  </body>
+</html>
