@@ -10,6 +10,7 @@
 .poi-color-white {color: white;}
 .poi-color-red {color: rgba(255, 0, 0, 0.8);}
 .poi-color-green {color: rgba(71, 255, 86, 0.8);}
+.poi-color-blue {color: rgba(20, 140, 252, 0.8);}
 .poi-color-yellow {color: rgba(229, 255, 0, 0.8);}
 .poi-color-orange {color: rgba(247, 202, 3, 0.8);}
 
@@ -19,6 +20,7 @@
 .poi-bg-lightgray {background: lightgray;}
 .poi-bg-red {background: rgba(255, 0, 0, 0.8);}
 .poi-bg-green {background: rgba(71, 255, 86, 0.8);}
+.poi-bg-blue {background: rgba(20, 140, 252, 0.8);}
 .poi-bg-yellow {background: rgba(229, 255, 0, 0.8);}
 .poi-bg-orange {background: rgba(247, 202, 3, 0.8);}
 .poi-bg-dark {background: rgba(0,0,0,0.8);}
@@ -33,6 +35,9 @@
 .poi-green-box-shadow {box-shadow: 0 0 5px rgba(71, 255, 86, 0.8);}
 .poi-green-box-shadow-large {box-shadow: 0 0 15px rgba(71, 255, 86, 0.8);}
 .poi-green-text-shadow {text-shadow: 1px 1px 2px rgba(71, 255, 86, 0.8);}
+.poi-blue-box-shadow {box-shadow: 0 0 5px rgba(20, 140, 252, 0.8);}
+.poi-blue-box-shadow-large {box-shadow: 0 0 15px rgba(20, 140, 252, 0.8);}
+.poi-blue-text-shadow {text-shadow: 1px 1px 2px rgba(20, 140, 252, 0.8);}
 .poi-yellow-box-shadow {box-shadow: 0 0 5px rgba(229, 255, 0, 0.8);}
 .poi-yellow-box-shadow-large {box-shadow: 0 0 15px rgba(229, 255, 0, 0.8);}
 .poi-yellow-text-shadow {text-shadow: 1px 1px 2px rgba(229, 255, 0, 0.8);}
@@ -40,7 +45,7 @@
 .poi-white-text-shadow {text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);}
 .poi-black-text-shadow {text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);}
 
-.poi-clear {clear: both;height:0px;}
+.poi-clear {clear:both;height:0px;}
 
 /***********************************************************
 * Common components 
@@ -61,6 +66,18 @@
   -webkit-animation: poi-loading 1.8s infinite ease-in-out;
 }
 
+.poi-content-row {
+  clear: both;
+}
+.poi-content-row-text, .subtitle-task {
+  float: left;
+  padding: 0 5px;
+}
+.poi-content-row-label, .subtitle-task-value {
+  float: right;
+  padding: 0 5px;
+}
+
 .poi-rec {
   width: 15px;
   height: 15px;
@@ -69,7 +86,7 @@
   box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
   border-radius: 50%;
   float: left;
-  margin: 10px 10px 0 0;
+  margin: 2px 10px 0 0;
 }
 
 .poi-deviant-icon {
@@ -87,7 +104,7 @@
 .poi-status, .poi-status-value {
   margin: 0 10px;
   padding: 0 5px;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 400;
 }
 .poi-status {
@@ -137,39 +154,42 @@
   border: 2px solid white;
 }
 .poi-block-samaritan .title {
+  width: 103.5%;
   margin: -5px -7px;
   text-align: center;
   border: 2px solid white;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
 }
 .poi-block-samaritan .subtitle,
 .poi-block-samaritan .subsubtitle {
-  margin: 0 5px;
+  margin: 10px 0;
+  padding: 0 5px;
+}
+.poi-block-samaritan .subtitle {
+  font-size: 16px;
+}
+.poi-block-samaritan .subsubtitle {
+  font-size: 14px;
 }
 .poi-block-samaritan .poi-content {
   margin: 20px;
 }
 .poi-block-samaritan .poi-content p {
   padding: 0;
-  font-size: 16px;
+  font-size: 14px;
 }
 .poi-block-samaritan .poi-content-row {
-  font-size: 20px;
+  font-size: 12px;
   font-weight: 400;
   width: 85%;
   height: 22px;
   margin-bottom: 5px;
-  clear: both;
 }
 .poi-block-samaritan .poi-content-row .poi-content-row-text {
-  float: left;
-  padding: 0 5px;
   width: calc(40% - 5px);
 }
 .poi-block-samaritan .poi-content-row .poi-content-row-label {
-  float: right;
-  padding: 0 5px;
   line-height: 1.3;
   width: calc(60% - 5px);
 }
@@ -180,6 +200,7 @@
 .poi-card-samaritan .title {
   margin-top: 5px;
   text-align: center;
+  font-size: 14px;
 }
 .poi-card-samaritan .subtitle {
   padding: 0 40px 0 2px;
@@ -192,41 +213,24 @@
 .poi-card-samaritan .poi-content-row {
   border: 2px solid gray;
   margin: 10px;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 400;
-  width: 70%;
   height: 22px;
-  clear: both;
-}
-.poi-card-samaritan .poi-content-row .poi-content-row-text,
-.poi-card-samaritan2 .poi-content-row .poi-content-row-text {
-  float: left;
-  padding: 0 5px;
-}
-.poi-card-samaritan .poi-content-row .poi-content-row-label,
-.poi-card-samaritan2 .poi-content-row .poi-content-row-label {
-  float: right;
-  padding: 0 5px;
+  line-height: 1.8;
 }
 
 .poi-card-samaritan2 .title {
   margin: 0px;
   padding: 0 10px;
-  font-size: 20px;
+  font-size: 18px;
   display: inline-block;
 }
 .poi-card-samaritan2 .subtitle {
   margin: 0 5px;
   padding: 5px;
-  font-size: 14px;
+  font-size: 12px;
 }
-.poi-card-samaritan2 .subtitle .subtitle-task {
-  float: left;
-}
-.poi-card-samaritan2 .subtitle .subtitle-task-value {
-  float: right;
-  padding: 0 5px;
-}
+
 .poi-card-samaritan2 .poi-content {
   padding: 5px 0;
   border-top: 2px solid lightgray;
@@ -234,27 +238,122 @@
 }
 .poi-card-samaritan2 .poi-content-row {
   margin: 10px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   width: 70%;
   height: 22px;
-  clear: both;
+}
+
+/***********************************************************
+* Machine 
+***********************************************************/
+
+.poi-block-machine .poi-content p,
+.poi-card-machine .poi-content p {
+  margin: 5px;
+}
+.poi-block-machine .subtitle,
+.poi-block-machine .subsubtitle {
+  margin: 0 5px;
+}
+.poi-block-machine .subtitle {
+  font-size: 16px;
+}
+.poi-block-machine .subsubtitle {
+  font-size: 10px;
+}
+.poi-block-machine .poi-content {
+  padding: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+.poi-block-machine .poi-content p {
+  padding: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.poi-block-machine {
+  border: 10px solid gray;
+}
+.poi-block-machine .title {
+  margin: 5px;
+  padding: 0 5px;
+  border: 2px solid rgba(255, 0, 0, 0.8);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.1;
+  display: inline-block;
+}
+
+.poi-block-machine2 {
+  border: 2px solid white;
+  border-radius: 5px;
+}
+.poi-block-machine2 .title {
+  width: calc(100% - 30px);
+  margin: 0 10px;
+  font-size: 16px;
+}
+.poi-block-machine2 .subtitle {
+  margin: 0 -5px;
+  padding: 0 5px;
+  font-size: 12px;
+}
+.poi-block-machine2 .poi-content {
+  margin: 10px 0;
+  font-size: 14px;
 }
 
 /* ------------------------------ */
 
-.poi-box {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.poi-card-machine .title {
+  float: left;
+  width: calc(40% - 20px);
+  margin: 0 10px;
+  text-align: left;
+  font-size: 16px;
+}
+.poi-card-machine .subtitle {
+  float: right;
+  width: calc(60% - 10px);
+  margin: 1px 5px 0 5px;
+  text-align: left;
+  font-size: 14px;
+}
+.poi-card-machine .poi-content {
+  font-size: 18px;
+  padding: 5px;
+}
+
+.poi-card-machine .poi-content-row {
   font-size: 12px;
+}
+
+.poi-card-machine .poi-content-row .poi-content-row-text {
+  width: calc(40% - 10px);
+}
+.poi-card-machine .poi-content-row .poi-content-row-label {
+  width: calc(60% - 10px);
+}
+
+
+/***********************************************************
+* Both (systems)
+***********************************************************/
+
+.poi-box {
+  /* top: 0; */
+  /* bottom: 0; */
+  /* left: 0; */
+  /* right: 0; */
+  font-size: 10px;
   margin: 10px auto;
 }
 .poi-box .title {
   margin: 0;
   padding: 2px 5px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1;
 }
@@ -278,108 +377,116 @@
   font-weight: 400;
   height: 22px;
   margin: 0 5px;
-  clear: both;
+  line-height: 1.8;
 }
 .poi-box .poi-content-row .poi-content-row-text {
   float: left;
-  padding: 0 5px;
   width: 50%;
+  margin: 2px 0;
 }
 .poi-box .poi-content-row .poi-content-row-label {
-  float: left;
   margin: 2px 0;
-  padding: 0 5px;
-  line-height: 1.3;
   font-weight: bold;
 }
 .poi-box .footer-title {
-  border: 2px solid#aaa3a3;;
+  border: 2px solid#aaa3a3;
   margin: -2px 0 0 0;
   padding: 5px 10px;
   text-align: center;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-/***********************************************************
-* Machine 
-***********************************************************/
-
-.poi-block-machine .poi-content p,
-.poi-card-machine .poi-content p {
-  margin: 5px;
-}
-.poi-block-machine .subtitle,
-.poi-block-machine .subsubtitle {
-  margin: 0 5px;
-}
-.poi-block-machine .poi-content p {
-  padding: 0;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.poi-block-machine {
-  border: 10px solid gray;
-}
-.poi-block-machine .title {
-  margin: 5px;
-  padding: 0 5px;
-  border: 2px solid rgba(255, 0, 0, 0.8);
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.1;
-  display: inline-block;
-}
-.poi-block-machine .subtitle {
   font-size: 14px;
+  font-weight: 400;
 }
-.poi-block-machine .subsubtitle {
-  font-size: 12px;
-}
-
-.poi-block-machine2 {
-  border: 2px solid white;
-  border-radius: 5px;
-}
-.poi-block-machine2 .title {
-  width: calc(100% - 30px);
-  margin: 0 10px;
-}
-.poi-block-machine2 .subtitle {
-  margin: 0 -5px;
-  padding: 0 5px;
-}
-.poi-block-machine2 .poi-content {
-  margin: 10px 0;
-}
-
 
 /* ------------------------------ */
 
-.poi-card-machine .title {
-  float: left;
-  width: calc(40% - 20px);
-  margin: 0 10px;
-  text-align: left;
+.poi-window {
+  width: 80%;
+  min-height: 400px;
+  overflow-y: auto;
+  font-size: 10px;
+  margin: 10px auto;
 }
-.poi-card-machine .subtitle {
+.poi-window .title {
+  margin: 0;
+  padding: 2px 5px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  border-bottom: 1px solid #aaa3a3;
+  clear: both;
+}
+.poi-window-buttonlist {
+  list-style-type: none;
   float: right;
-  width: calc(60% - 10px);
-  margin: 10px 5px 0 5px;
-  text-align: left;
 }
-.poi-card-machine .poi-content {
-  font-size: 20px;
-  padding: 5px;
-}
-.poi-card-machine .poi-content-row .poi-content-row-text {
+.poi-window-buttonlist .poi-window-button {
   float: left;
-  width: calc(40% - 10px);
+  margin: 0 5px;
+  font-size: 14px;
+  cursor: pointer;
+  vertical-align: middle;
 }
-.poi-card-machine .poi-content-row .poi-content-row-label {
-  float: right;
-  width: calc(60% - 10px);
+.poi-window-buttonlist .poi-window-min-button {
+	color: rgba(27, 201, 60, 0.3) !important;
+}
+.poi-window-buttonlist .poi-window-max-button {
+	color: rgba(254, 190, 0, 0.3) !important;
+}
+.poi-window-buttonlist .poi-window-close-button {
+	color: rgba(255, 93, 80, 0.3) !important;
+}
+.poi-window-buttonlist .poi-window-min-button:hover {
+	color: rgba(27, 201, 60, 1) !important;
+	text-shadow: 0px 0px 10px rgba(27, 201, 60, 1) !important;
+}
+.poi-window-buttonlist .poi-window-max-button:hover {
+	color: rgba(254, 190, 0, 1) !important;
+	text-shadow: 0px 0px 10px rgba(254, 190, 0, 1) !important;
+}
+.poi-window-buttonlist .poi-window-close-button:hover {
+	color: rgba(255, 93, 80, 1) !important;
+	text-shadow: 0px 0px 10px rgba(255, 93, 80, 1) !important;
+}
+.poi-window .poi-content {
+  margin: 5px;
+}
+.poi-window .poi-content p {
+  margin: 0 5px;
+}
+.poi-window .poi-content-row {
+  font-weight: 400;
+  height: 22px;
+  margin: 0 5px;
+  line-height: 1.8;
+}
+.poi-window .poi-content-row .poi-content-row-text {
+  float: left;
+  width: 50%;
+  margin: 2px 0;
+}
+.poi-window .poi-content-row .poi-content-row-label {
+  margin: 2px 0;
+  font-weight: bold;
+}
+
+/* ------------------------------ */
+
+.poi-terminal {
+  font-size: 12px;
+  margin: 10px auto;
+}
+.poi-terminal .poi-content {
+  border: 1px solid #aaa3a3;
+}
+.poi-terminal .poi-content p, .poi-terminal .poi-content-row {
+  margin: 0 5px;
+  font-family: 'Inconsolata', monospace;
+  text-transform: initial;
+}
+.poi-terminal .poi-content .poi-promt {
+  animation: poi-fading 1s infinite ease-in-out;
+  -moz-animation: poi-fading 1s infinite ease-in-out;
+  -webkit-animation: poi-fading 1s infinite ease-in-out;
 }
 
 /***********************************************************
@@ -394,7 +501,7 @@
   height: 20px;
 }
 .poi-progressbar-dark .poi-progressbar-value-text {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   text-align: center;
   margin-top: -19px;
@@ -407,7 +514,7 @@
   height: 20px;
 }
 .poi-progressbar-medium .poi-progressbar-value-text {
-  font-size: 14px;
+  font-size: 12px;
   margin-top: -20px;
   margin-left: 2px;
   text-align: center;
@@ -503,7 +610,7 @@ a.poi-button-large {
   border: 0;
   color: white;
   margin: 10px;
-  font-size: 14px;
+  font-size: 12px;
   cursor: pointer;
   background-size: 100% 100%;
   -webkit-transition: -webkit-transform .1s ease-in-out;
