@@ -11,10 +11,16 @@ Extra content in the samples section 1-1 demo component (carousel, lightbox) fro
 
 ## Web
 
-<a href="http://phresh-it.hu/" target="_blank">Phresh-IT</a>
+<a href="https://phresh-it.hu/" target="_blank">Phresh-IT</a>
 
-<a href="http://phresh-it.hu/demos/poi-web-ui/" target="_blank">poi-web-ui demo</a>
+<a href="https://phresh-it.hu/demos/poi-web-ui/" target="_blank">poi-web-ui demo</a>
 
 
 ## Licence
 Copyright (c) 2018, Krisztián Kis - Phresh-IT. All rights reserved.
+
+### Support
+
+If you like my work(s), please buy me a coffee or support/donate me. Contributions, issues(problems, ideas) and [donates](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=L3HSBGM4JTKEL&source=url) are welcome.
+
+Thank you, Have a nice day!
