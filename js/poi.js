@@ -15,11 +15,10 @@ function samaritanWrite(bannerid, i, text, cbfunc, cbfuncparam) {
   }
 }
 
-function poiWindowToggle(id) {
+function poiWindowMinimize(id) {
   var poiWindow = document.getElementById(id);
   var poiWindowContent = document.getElementById(id + 'content');
   var poiWindowHeight = poiWindow.style.minHeight;
-  console.log(poiWindowHeight);
 
   if (poiWindowHeight === '15px') {
     // window is minimized
@@ -29,6 +28,19 @@ function poiWindowToggle(id) {
     // window is normal size
     poiWindowContent.style.display='none';
     poiWindow.style.minHeight ='15px';
+  }
+
+}
+function poiWindowMaximize(id) {
+  var poiWindow = document.getElementById(id);
+  var poiWindowWidth = poiWindow.style.width;
+
+  if (poiWindowWidth === '100%') {
+    // window is maximized
+    poiWindow.style.width ='80%';
+  } else {
+    // window is normal size
+    poiWindow.style.width ='100%';
   }
 
 }
